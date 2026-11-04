@@ -3,21 +3,60 @@
     <head>
         <title> Advanced HTML Notes</title>
         <meta charset = "UTF-8">
+        <style>
+            /*cascading style sheets
+            1. selector
+            2. declaration 
+                a. property 
+                b. value
+            */
+            body{
+                color:rgb(135, 146, 211); 
+                background-color:rgb(35, 9, 48);
+            }
+            h1{
+                color:#fff;
+                text-decoration: underline;
+                text-align: center;
+            }
+            #even{
+                color:rgb(250, 235, 215);
+            }
+            .numbered{
+                font-size: 20px;
+            }
+            .important{
+                font-weight:bolder ;
+            }
+            ul{
+                background-color:rgba(105, 105, 105, 0.322);
+                border-radius: 4px;
+                width: 25%;
+                height: 100px;
+                font-size: 1em;
+                border: solid 2px orange;
+                /* vw vh adjust size based on size of the screen*/
+            }
+            #winter{
+                width: 50%;
+            }
+
+        </style>
     </head>
     <body>
         <h1> Advanced HTML Notes</h1>
         <h3>Lists:</h3>
          <div>
-        <ol type= "i">
+        <ol type= "i" class="numbered">
             <li>this is the first thing</li>
-            <li>this is the second thing</li>
+            <li id="even">this is the second thing</li>
             <li>this comes in third</li>
         </ol>
         <ul>
             <li><a href="https://usapple.org/apple-varieties" target="_blank">Apple</a></li>
-            <li>Banana</li>
+            <li class="important" id="even">Banana</li>
             <li>Orange</li>
-            <li>Kiwi</li>
+            <li id="even">Kiwi</li>
         </ul>
         <dl>
             <dt>Fall</dt>
@@ -32,7 +71,7 @@
         
         <a href="https://globalsummitguide.com/mount-timpanogos-hiking-guide/" target= "blank"><img src="https://globalsummitguide.com/wp-content/uploads/2026/07/AdobeStock_1146206325-scaled.jpeg" alt="Mount Timp" width="200px"></a>
         
-        <img src="Mount_Timp.jpg" alt="sunset on timp" width = "200px">
+        <img id="winter"src="Mount_Timp.jpg" alt="sunset on timp" width = "200px">
         <p>image from <a href="https://commons.wikimedia.org/wiki File:Mount_Timpanogos_at_sunset.jpg" target="_blank">Wikimedia Commons</a></p>
        </div>
 
