@@ -51,12 +51,19 @@
             grid-template-columns: 70% 30%;
             grid-template-rows: 20% 20% 20% 20% 20%;
         }
+        #life{
+            width:100px
+        }
+        #paragraph{
+            
+        }
 
     </style>
     <body>
         <h1>Asian TV</h1>
         <div id="D">
-        <img id= "Tangerines" src="https://miro.medium.com/1*ZOJ3JpdI1jkjWof20UjnHA.jpeg" alt="When Life Gives You Tangerines" target="_blank"><br>Medium
+        <img id= "Tangerines" src="https://miro.medium.com/1*ZOJ3JpdI1jkjWof20UjnHA.jpeg" alt="When Life Gives You Tangerines" target="_blank"
+        onmouseout="changeImage()"><br>Medium
         </ul>
         </div>
         <h2 id="dramas">Dramas</h2>
@@ -85,6 +92,37 @@
        <div id="D">
        <img id = "April" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/86c8eec2-ee0b-426b-9037-d2e4bfce4a20/dcruobg-92f010fd-f235-4790-ad27-f0fc640b5b09.jpg/v1/fill/w_900,h_573,q_75,strp/your_lie_in_april_by_anonamos701_dcruobg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTczIiwicGF0aCI6Ii9mLzg2YzhlZWMyLWVlMGItNDI2Yi05MDM3LWQyZTRiZmNlNGEyMC9kY3J1b2JnLTkyZjAxMGZkLWYyMzUtNDc5MC1hZDI3LWYwZmM2NDBiNWIwOS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.bWeCgNH73jXDluNmgPFAaAJ_2pSX0tyucwKSCGGVSHA" alt="your lie in april"  target="_blank"><br>DeviantART
         </div>
+        <div id="paragraph">
+        <h2>
+            Soundtrack
+        </h2>
+            <p>
+                Soundtracks are another big thing. You can get supper into the music that is played in your favprite shows. they can remind you of the plot and are really catchy and fun to liste to. 
+            </p>
+            <img id= life src="https://m.media-amazon.com/images/M/MV5BMGVhYTQ4ZmQtYzU0ZC00N2M4LTkxMjYtMTg3N2Y5ZThmMTcwXkEyXkFqcGc@._V1_.jpg">
+        </div>
+        <button id="showMore" onClick="show()">Show Less</button>
 
     </body>
+    <script>
+        let images = ["https://images.lifestyleasia.com/wp-content/uploads/sites/7/2025/03/31095525/untitled-design-2025-03-29t140144-191.jpeg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMiIVH9qM-ou3KAca4lug6XkLRHIMRFpGrhQvRl1JuOWNE-ueQdN8bUTo&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuRJ5KVIjPOT4Ejulr3remhMyc8n8tUs1Naef1IncTp8H02o20OOIAl0&s=10", "https://miro.medium.com/1*ZOJ3JpdI1jkjWof20UjnHA.jpeg" ]
+        let current=0
+        function changeImage(){
+            current += 1
+            if (current > 3){
+                current=0
+           }
+            document.getElementById("Tangerines").src=images[current]
+        }
+        function show(){
+            let element = document.getElementById("paragraph")
+            if (element.style.display == "block"){
+                element.style.display = "none"
+                document.getElementById("showMore").innerHTML = "show More"
+            }else{
+                element.style.display = "flex"
+                document.getElementById("showLess").innerHTML = "show Less"
+            }
+        }
+    </script>
 </html>
