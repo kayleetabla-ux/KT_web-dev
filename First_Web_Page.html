@@ -55,7 +55,7 @@
             width:100px
         }
         #paragraph{
-            
+            display: none;
         }
 
     </style>
@@ -97,11 +97,11 @@
             Soundtrack
         </h2>
             <p>
-                Soundtracks are another big thing. You can get supper into the music that is played in your favprite shows. they can remind you of the plot and are really catchy and fun to liste to. 
+                Soundtracks are another big thing. You can get supper into the music that is played in your favprite shows. they can remind you of the plot and are really catchy and fun to liste to. one really good kdrama has an amazing song that fits the vibe of meloncholy and calm: silence -sunwoojunga it's very emotion filled, but the other songs in the playlist can also be fun and energetic at times. 
             </p>
             <img id= life src="https://m.media-amazon.com/images/M/MV5BMGVhYTQ4ZmQtYzU0ZC00N2M4LTkxMjYtMTg3N2Y5ZThmMTcwXkEyXkFqcGc@._V1_.jpg">
         </div>
-        <button id="showMore" onClick="show()">Show Less</button>
+        <button id="showMore" onClick="show()">Show More</button>
 
     </body>
     <script>
@@ -114,14 +114,15 @@
            }
             document.getElementById("Tangerines").src=images[current]
         }
+        
         function show(){
             let element = document.getElementById("paragraph")
             if (element.style.display == "block"){
                 element.style.display = "none"
                 document.getElementById("showMore").innerHTML = "show More"
             }else{
-                element.style.display = "flex"
-                document.getElementById("showLess").innerHTML = "show Less"
+                element.style.display = "block"
+                document.getElementById("showMore").innerHTML = "show Less"
             }
         }
     </script>
