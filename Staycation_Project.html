@@ -22,29 +22,50 @@
         #first{
             display:flex;
             flex-direction:column;
+
         }
         #second{
             display:flex;
             flex-direction:column;
+
         }
         #third{
             display:flex;
             flex-direction:column;
+
         }
         #fourth{
             display:flex;
             flex-direction:column;
+
         }
         #all{
             display:flex;
-            flex-direction: row;  
-            border: 2px solid rgb(255, 234, 188);          
+            flex-direction: column;  
+            border: 2px solid rgb(255, 234, 188);   
+            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25% ;
+        }
+        #part{
+            font-size:xx-large;
+        }
+        #paragraph{
+            display:none;
+        }
+        #fith{
+            display: flex;
+            
+            flex-direction: column;
+            width: 400px;
+            justify-content: flex-end;
         }
     </style>
     <body>
     <div id="all">
         <div id="first">
-            <img src="https://www.grandcanyontrust.org/wp-content/uploads/2024/11/Angels_landing_main.jpg"alt="Zion 1" target= "_blank">
+            <img src="https://www.grandcanyontrust.org/wp-content/uploads/2024/11/Angels_landing_main.jpg"alt="Zion 1" target= "_blank"
+            onmouseout="changeImage()">
         </div>   
         <div id="second">
             <img src="https://s.wsj.net/public/resources/images/BN-IK758_zionwe_P_20150514152255.jpg"alt="Zion 2" target= "_blank">
@@ -59,18 +80,50 @@
         <br> <p>instagram</p> </br>
         </div> 
     </div>
-    
-   
         <h1>Zion's Canyon</h1>
+    <div id="part">
         <p>Zion's Canyon is a beautiful site. Scenic drives and sculpeted rocks and mountains are loved with the most iconic views. experience the hickes through the deep gorge in the heart of zion's national park</p>
-        <h2>This is a subheader</h2>
-        <p>Paragraphs get put on there own lines, just like starting a new paragraph in <br>English</p>
         <ol>
             <li>Zion's canyon has the most stunning and thrilling hikes that offer breathtaking views</li>
             <li>Diverse wildlife roam the area</li>
             <li>Gorgeous views aren't only high up, you can reach beautiful spots at various elevations</li>
             <li>Even in thwe night, the view is spectacular. stargazing is one of a kind at zion's canyon</li>
         </ol>
+    <div id="paragraph">
+        <p >
+            Did you know that some of the names of several stone peaks still hold names that root back to southern paiute theology? Mount Kinesava is named after Kinesava, a michievious trickster god. 
+        </p>
+        <p>
+            In 1861 a pioneer named issac behunin built a cabin in the canyon and declared "zion!" saying that any man could worship amongst the cliffs just as well as a man-made temple.</br> 
+        </p>
+        <div id="fith">
+            <img src="https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"alt="Zion 5" target= "_blank">
+        <br> <p>picryl</p> </br>
+        </div> 
+        </div>
+</div>
+    <button id="showMore" onClick="show()"> Fun Facts</button>
     </body>
+    <script>
+        let images = ["https://media.istockphoto.com/id/541139636/photo/narrow-with-vergin-river-in-zion-national-park-utah-usa.jpg?s=612x612&w=0&k=20&c=vXh4VxehrgYDpoBkINrRdyCIogWAChU0snf7t2r_Bew=", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugJmn1v43MJbJvoB_QNCcQ7RLnGVrNH_u-Ewp5jK-QYebmHmwZTJL7r4&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuRJ5KVIjPOT4Ejulr3remhMyc8n8tUs1Naef1IncTp8H02o20OOIAl0&s=10", "https://s.wsj.net/public/resources/images/BN-IK758_zionwe_P_20150514152255.jpg" ]
+        let current=0
+        function changeImage(){
+            current += 1
+            if (current > 3){
+                current=0
+           }
+            document.getElementById("first").src=images[current]
+        }
+        function show(){
+            let element = document.getElementById("paragraph")
+            if (element.style.display == "block"){
+                element.style.display = "none"
+                document.getElementById("showMore").innerHTML = "show More"
+            }else{
+                element.style.display = "block"
+                document.getElementById("showMore").innerHTML = "show Less"
+            }
+        }
+    </script>
 
 </html>
