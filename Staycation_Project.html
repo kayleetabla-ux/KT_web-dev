@@ -22,30 +22,18 @@
         #first{
             display:flex;
             flex-direction:column;
+            width: 400px;
 
         }
         #second{
             display:flex;
             flex-direction:column;
-
+            width: 400px;
         }
         #third{
             display:flex;
             flex-direction:column;
-
-        }
-        #fourth{
-            display:flex;
-            flex-direction:column;
-
-        }
-        #all{
-            display:flex;
-            flex-direction: column;  
-            border: 2px solid rgb(255, 234, 188);   
-            justify-content: space-between;
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25% ;
+            width: 400px;
         }
         #part{
             font-size:xx-large;
@@ -60,65 +48,75 @@
             width: 400px;
             justify-content: flex-end;
         }
+        #found{
+            font-size: medium;
+        }
+        #all{
+            display:flex;
+            
+        }
     </style>
+    <h1>Zion's Canyon</h1>
     <body>
+        
     <div id="all">
-        <div id="first">
-            <img src="https://www.grandcanyontrust.org/wp-content/uploads/2024/11/Angels_landing_main.jpg"alt="Zion 1" target= "_blank"
-            onmouseout="changeImage()">
-        </div>   
-        <div id="second">
-            <img src="https://s.wsj.net/public/resources/images/BN-IK758_zionwe_P_20150514152255.jpg"alt="Zion 2" target= "_blank">
-        <br> <p>Wall Street Journal</p> </br>
-        </div> 
-        <div id="third">
-            <img src="https://media.istockphoto.com/id/541139636/photo/narrow-with-vergin-river-in-zion-national-park-utah-usa.jpg?s=612x612&w=0&k=20&c=vXh4VxehrgYDpoBkINrRdyCIogWAChU0snf7t2r_Bew="alt="Zion 3" target= "_blank">
-        <br> <p>istock</p> </br>
-        </div> 
-        <div id="fourth">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugJmn1v43MJbJvoB_QNCcQ7RLnGVrNH_u-Ewp5jK-QYebmHmwZTJL7r4&s=10"alt="Zion 4" target= "_blank">
-        <br> <p>instagram</p> </br>
-        </div> 
-    </div>
-        <h1>Zion's Canyon</h1>
-    <div id="part">
-        <p>Zion's Canyon is a beautiful site. Scenic drives and sculpeted rocks and mountains are loved with the most iconic views. experience the hickes through the deep gorge in the heart of zion's national park</p>
-        <ol>
-            <li>Zion's canyon has the most stunning and thrilling hikes that offer breathtaking views</li>
-            <li>Diverse wildlife roam the area</li>
-            <li>Gorgeous views aren't only high up, you can reach beautiful spots at various elevations</li>
-            <li>Even in thwe night, the view is spectacular. stargazing is one of a kind at zion's canyon</li>
-        </ol>
-    <div id="paragraph">
-        <p >
-            Did you know that some of the names of several stone peaks still hold names that root back to southern paiute theology? Mount Kinesava is named after Kinesava, a michievious trickster god. 
-        </p>
-        <p>
-            In 1861 a pioneer named issac behunin built a cabin in the canyon and declared "zion!" saying that any man could worship amongst the cliffs just as well as a man-made temple.</br> 
-        </p>
-        <div id="fith">
-            <img src="https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"alt="Zion 5" target= "_blank">
-        <br> <p>picryl</p> </br>
-        </div> 
+        <div>
+            <div id="first">
+                <img src="https://www.grandcanyontrust.org/wp-content/uploads/2024/11/Angels_landing_main.jpg"alt="Zion 1" target= "_blank"> 
+            <div id="second">
+                <img src="https://images.squarespace-cdn.com/content/v1/58d5543e9de4bb1b19e81da4/1510765454888-QT36XXP9C1IKD0GZEDRP/Angels+Landing.jpg"alt="Zion 2" target="_blank">
+            </div>
+            <div id="third"> 
+                <img src="https://media.gettyimages.com/id/528284494/photo/dramatic-clouds-and-red-rock-canyons-in-zion.jpg?s=612x612&w=0&k=20&c=DdsPjHfe3_SFiPFb34W7fhHu1LikL473LLQAZRn86-4=" alt="Zion 3" target="_blank">
+            </div>
+        </div>
+        <br> <p>Canyoneering USA</p> </br>
+    </div> 
+    
+    
+    
+        <div id="part">
+            <p>Zion's Canyon is a beautiful site. Scenic drives and sculpeted rocks and mountains are loved with the most iconic views. experience the hickes through the deep gorge in the heart of zion's national park</p>
+            <ol>
+                <li>Zion's canyon has the most stunning and thrilling hikes that offer breathtaking views</li>
+                <li>Diverse wildlife roam the area</li>
+                <li>Gorgeous views aren't only high up, you can reach beautiful spots at various elevations</li>
+                <li>Even in thwe night, the view is spectacular. stargazing is one of a kind at zion's canyon</li>
+            </ol>
+        <div id="paragraph">
+            <p >
+                Did you know that some of the names of several stone peaks still hold names that root back to southern paiute theology? Mount Kinesava is named after Kinesava, a michievious trickster god. 
+            </p>
+            <p>
+                In 1861 a pioneer named issac behunin built a cabin in the canyon and declared "zion!" saying that any man could worship amongst the cliffs just as well as a man-made temple.</br> 
+            </p>
+            <div id="fith">
+                <img id="sixth" src="https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"alt="Zion 5" target= "_blank"
+                onmouseout="changeImage()">
+            <br> <p id="found">picryl</p> </br>
+            </div>
         </div>
 </div>
+</div>
     <button id="showMore" onClick="show()"> Fun Facts</button>
+    
+    
     </body>
     <script>
-        let images = ["https://media.istockphoto.com/id/541139636/photo/narrow-with-vergin-river-in-zion-national-park-utah-usa.jpg?s=612x612&w=0&k=20&c=vXh4VxehrgYDpoBkINrRdyCIogWAChU0snf7t2r_Bew=", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugJmn1v43MJbJvoB_QNCcQ7RLnGVrNH_u-Ewp5jK-QYebmHmwZTJL7r4&s=10", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuRJ5KVIjPOT4Ejulr3remhMyc8n8tUs1Naef1IncTp8H02o20OOIAl0&s=10", "https://s.wsj.net/public/resources/images/BN-IK758_zionwe_P_20150514152255.jpg" ]
+        let images = ["https://s.wsj.net/public/resources/images/BN-IK758_zionwe_P_20150514152255.jpg", "https://media.istockphoto.com/id/541139636/photo/narrow-with-vergin-river-in-zion-national-park-utah-usa.jpg?s=612x612&w=0&k=20&c=vXh4VxehrgYDpoBkINrRdyCIogWAChU0snf7t2r_Bew=", "https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"]
         let current=0
         function changeImage(){
             current += 1
-            if (current > 3){
+            if (current > 2){
                 current=0
            }
-            document.getElementById("first").src=images[current]
+            document.getElementById("sixth").src=images[current]
         }
         function show(){
             let element = document.getElementById("paragraph")
             if (element.style.display == "block"){
                 element.style.display = "none"
-                document.getElementById("showMore").innerHTML = "show More"
+                document.getElementById("showMore").innerHTML = "Fun Facts"
             }else{
                 element.style.display = "block"
                 document.getElementById("showMore").innerHTML = "show Less"
