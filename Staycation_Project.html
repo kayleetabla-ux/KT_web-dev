@@ -10,30 +10,34 @@
     <style>
         h1{
             text-align: center;
+            font-size: 100px;
+            text-decoration: underline;
         }
         body{
             background-color: rgb(109, 109, 109);
             color:rgb(120, 199, 169);
             font-family: "Cormorant Garamond", serif;
-            font-weight: 400;
+            font-weight: 600;
             font-style: normal;
-            font-size:large;
+            margin: 50px
         }
         #first{
             display:flex;
             flex-direction:column;
-            width: 400px;
+            width: 600px;
+            padding: 20px;
 
         }
         #second{
             display:flex;
             flex-direction:column;
-            width: 400px;
+            width: 600px;
         }
         #third{
             display:flex;
             flex-direction:column;
-            width: 400px;
+            width: 600px;
+            justify 
         }
         #part{
             font-size:xx-large;
@@ -42,23 +46,37 @@
             display:none;
         }
         #fith{
-            display: flex;
-            
+            display: flex;   
             flex-direction: column;
-            width: 400px;
+            width: 600px;
             justify-content: flex-end;
+            float:right;
+        }
+        #other{
+            display: flex;   
+            flex-direction:row;
         }
         #found{
             font-size: medium;
         }
         #all{
             display:flex;
+            justify-content:space-between;
             
         }
+        #other{
+            
+        }
+        #sixth{
+            
+        }
+
     </style>
     <h1>Zion's Canyon</h1>
     <body>
         
+    <button id="showMore" onClick="show()"> Fun Facts</button>
+    
     <div id="all">
         <div>
             <div id="first">
@@ -66,14 +84,10 @@
             <div id="second">
                 <img src="https://images.squarespace-cdn.com/content/v1/58d5543e9de4bb1b19e81da4/1510765454888-QT36XXP9C1IKD0GZEDRP/Angels+Landing.jpg"alt="Zion 2" target="_blank">
             </div>
-            <div id="third"> 
-                <img src="https://media.gettyimages.com/id/528284494/photo/dramatic-clouds-and-red-rock-canyons-in-zion.jpg?s=612x612&w=0&k=20&c=DdsPjHfe3_SFiPFb34W7fhHu1LikL473LLQAZRn86-4=" alt="Zion 3" target="_blank">
-            </div>
+            
         </div>
         <br> <p>Canyoneering USA</p> </br>
-    </div> 
-    
-    
+    </div id="words"> 
     
         <div id="part">
             <p>Zion's Canyon is a beautiful site. Scenic drives and sculpeted rocks and mountains are loved with the most iconic views. experience the hickes through the deep gorge in the heart of zion's national park</p>
@@ -84,24 +98,34 @@
                 <li>Even in thwe night, the view is spectacular. stargazing is one of a kind at zion's canyon</li>
             </ol>
         <div id="paragraph">
+            <h3>Fun facts</h3>
+        
             <p >
                 Did you know that some of the names of several stone peaks still hold names that root back to southern paiute theology? Mount Kinesava is named after Kinesava, a michievious trickster god. 
             </p>
             <p>
                 In 1861 a pioneer named issac behunin built a cabin in the canyon and declared "zion!" saying that any man could worship amongst the cliffs just as well as a man-made temple.</br> 
             </p>
-            <div id="fith">
-                <img id="sixth" src="https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"alt="Zion 5" target= "_blank"
-                onmouseout="changeImage()">
-            <br> <p id="found">picryl</p> </br>
+        
+                <div id="fith">
+                    <img id="sixth" src="https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"alt="Zion 5" target= "_blank"
+                    onmouseout="changeImage()">
+                <p id="found">picryl</p>
+                </div>
+
             </div>
-        </div>
+                    <div id="third"> 
+                        <img src="https://media.gettyimages.com/id/528284494/photo/dramatic-clouds-and-red-rock-canyons-in-zion.jpg?s=612x612&w=0&k=20&c=DdsPjHfe3_SFiPFb34W7fhHu1LikL473LLQAZRn86-4=" alt="Zion 3" target="_blank">
+                    </div>
+                </div>
+        
 </div>
+</body>
 </div>
-    <button id="showMore" onClick="show()"> Fun Facts</button>
     
     
-    </body>
+    
+    
     <script>
         let images = ["https://s.wsj.net/public/resources/images/BN-IK758_zionwe_P_20150514152255.jpg", "https://media.istockphoto.com/id/541139636/photo/narrow-with-vergin-river-in-zion-national-park-utah-usa.jpg?s=612x612&w=0&k=20&c=vXh4VxehrgYDpoBkINrRdyCIogWAChU0snf7t2r_Bew=", "https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"]
         let current=0
