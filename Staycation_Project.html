@@ -12,37 +12,45 @@
             text-align: center;
             font-size: 100px;
             text-decoration: underline;
+            color: rgb(126, 29, 5)
         }
         body{
             background-color: rgb(109, 109, 109);
-            color:rgb(120, 199, 169);
+            color:rgb(247, 172, 11);
             font-family: "Cormorant Garamond", serif;
             font-weight: 600;
             font-style: normal;
-            margin: 50px
+            font-size: medium;
+
+            
         }
         #first{
             display:flex;
-            flex-direction:column;
-            width: 600px;
+            flex-direction:row;
+            height: 550px;
             padding: 20px;
 
         }
         #second{
             display:flex;
-            flex-direction:column;
-            width: 600px;
+            flex-direction:row;
+            height: 550px;
+            padding: 20px;
+
         }
         #third{
             display:flex;
-            flex-direction:column;
-            width: 600px;
-            justify 
+            flex-direction:row;
+            height:550px;
+            padding: 20px;
+
+   
         }
         #part{
             font-size:xx-large;
         }
         #paragraph{
+            font-size: xx-large;
             display:none;
         }
         #fith{
@@ -50,7 +58,7 @@
             flex-direction: column;
             width: 600px;
             justify-content: flex-end;
-            float:right;
+            float:left;
         }
         #other{
             display: flex;   
@@ -61,14 +69,20 @@
         }
         #all{
             display:flex;
-            justify-content:space-between;
+            flex-direction: row;
+            justify-content: space-around;
             
         }
-        #other{
-            
+        #words{
+                background-color:rgb(74, 67, 107);
+                border: solid 4px rgb(121, 91, 36);
+                font-size: medium ;
+
+         
         }
-        #sixth{
-            
+        h3{
+            color: rgb(233, 101, 40);
+            text-decoration: underline;
         }
 
     </style>
@@ -78,16 +92,21 @@
     <button id="showMore" onClick="show()"> Fun Facts</button>
     
     <div id="all">
-        <div>
-            <div id="first">
-                <img src="https://www.grandcanyontrust.org/wp-content/uploads/2024/11/Angels_landing_main.jpg"alt="Zion 1" target= "_blank"> 
-            <div id="second">
-                <img src="https://images.squarespace-cdn.com/content/v1/58d5543e9de4bb1b19e81da4/1510765454888-QT36XXP9C1IKD0GZEDRP/Angels+Landing.jpg"alt="Zion 2" target="_blank">
-            </div>
-            
-        </div>
-        <br> <p>Canyoneering USA</p> </br>
-    </div id="words"> 
+
+                <div >
+                    <img id="first" src="https://www.grandcanyontrust.org/wp-content/uploads/2024/11/Angels_landing_main.jpg"alt="Zion 1" target= "_blank"> 
+                </div>
+                <div >
+                    <img id="second" src="https://images.squarespace-cdn.com/content/v1/58d5543e9de4bb1b19e81da4/1510765454888-QT36XXP9C1IKD0GZEDRP/Angels+Landing.jpg"alt="Zion 2" target="_blank">
+                <br> <p>Canyoneering USA</p> </br>
+                </div>
+                <div > 
+                    <img id="third" src="https://media.gettyimages.com/id/528284494/photo/dramatic-clouds-and-red-rock-canyons-in-zion.jpg?s=612x612&w=0&k=20&c=DdsPjHfe3_SFiPFb34W7fhHu1LikL473LLQAZRn86-4=" alt="Zion 3" target="_blank">
+                </div>
+
+
+    </div>
+    <div id="words"> 
     
         <div id="part">
             <p>Zion's Canyon is a beautiful site. Scenic drives and sculpeted rocks and mountains are loved with the most iconic views. experience the hickes through the deep gorge in the heart of zion's national park</p>
@@ -97,6 +116,7 @@
                 <li>Gorgeous views aren't only high up, you can reach beautiful spots at various elevations</li>
                 <li>Even in thwe night, the view is spectacular. stargazing is one of a kind at zion's canyon</li>
             </ol>
+        </div>
         <div id="paragraph">
             <h3>Fun facts</h3>
         
@@ -113,19 +133,9 @@
                 <p id="found">picryl</p>
                 </div>
 
-            </div>
-                    <div id="third"> 
-                        <img src="https://media.gettyimages.com/id/528284494/photo/dramatic-clouds-and-red-rock-canyons-in-zion.jpg?s=612x612&w=0&k=20&c=DdsPjHfe3_SFiPFb34W7fhHu1LikL473LLQAZRn86-4=" alt="Zion 3" target="_blank">
-                    </div>
-                </div>
-        
-</div>
+        </div>
+    </div>
 </body>
-</div>
-    
-    
-    
-    
     <script>
         let images = ["https://s.wsj.net/public/resources/images/BN-IK758_zionwe_P_20150514152255.jpg", "https://media.istockphoto.com/id/541139636/photo/narrow-with-vergin-river-in-zion-national-park-utah-usa.jpg?s=612x612&w=0&k=20&c=vXh4VxehrgYDpoBkINrRdyCIogWAChU0snf7t2r_Bew=", "https://cdn12.picryl.com/photo/2016/12/31/antelope-canyon-sand-stone-slot-canyon-422a3b-1024.jpg"]
         let current=0
